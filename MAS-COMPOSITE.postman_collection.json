@@ -1,0 +1,1878 @@
+{
+	"info": {
+		"_postman_id": "51e5581c-18dd-4070-ac63-4ac89d4604b2",
+		"name": "MAS-COMPOSITE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Import FW015",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1bf838d1-fcfb-466f-a656-04adc0c89a07",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW015.20180914.1.01005.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/accounting",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"accounting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW023",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3663e9f9-b60b-4a6f-b529-e7836bb127e7",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW015.20180914.1.01005.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/commissionsconditionsoutcome",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"commissionsconditionsoutcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import FW001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "615217a5-6d0b-418a-ba49-8710cfd28e42",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n  \t\"fileName\":\"MAS.01005.FW001.20181116.1.BNL.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/anagraphic",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"anagraphic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW002",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "055c7ccb-82f3-439d-bffb-5670578bcc43",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW001.20180914.2.BNL.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/anagraphic",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"anagraphic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW002 Differito WP",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "055c7ccb-82f3-439d-bffb-5670578bcc43",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"requestHeaders\":{\r\n\"technicalHeader\":{\r\n\"applicationId\":null,\r\n\"correlationId\":\"777777777\",\r\n\"channel\":null,\r\n\"ipAddress\":null,\r\n\"sessionId\":null,\r\n\"timestamp\":null\r\n},\r\n\"authHeader\":{\r\n\"userId\":null,\r\n\"username\":null,\r\n\"roles\":null\r\n}\r\n},\r\n\"responseHeaders\":null,\r\n\"payload\": {\r\n\"to\":\"DPG\",\r\n\"fileType\":\"FW002\",\r\n\"from\":\"MAS\",\r\n\"params\": {\r\n\"prevJobId\":\"d26e3f6a09d640e99ba0eb37b996fb5b\"\r\n}\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/anagraphic",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"anagraphic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW002 Post 27",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "055c7ccb-82f3-439d-bffb-5670578bcc43",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"requestHeaders\":{\r\n\"technicalHeader\":{\r\n\"applicationId\":null,\r\n\"correlationId\":\"777777777\",\r\n\"channel\":null,\r\n\"ipAddress\":null,\r\n\"sessionId\":null,\r\n\"timestamp\":null\r\n},\r\n\"authHeader\":{\r\n\"userId\":null,\r\n\"username\":null,\r\n\"roles\":null\r\n}\r\n},\r\n\"responseHeaders\":null,\r\n\"payload\": {\r\n\"to\":\"DPG\",\r\n\"fileType\":\"FW002\",\r\n\"from\":\"MAS\",\r\n\"params\": {\r\n\"prevJobId\":\"d26e3f6a09d640e99ba0eb37b996fb5b\"\r\n}\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/anagraphic",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"anagraphic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import FW003",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd6e0fee-6acc-40e9-84f0-26f09cd7da0b",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW003.20180917.1.DPG.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/outcome",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"outcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW004",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf27ec84-cb14-4f35-9d48-d72fbe7aae8c",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW003.20180917.1.DPG.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/outcome",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"outcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import FW005",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "08e1c914-a207-41ce-a1a4-55ad684e83c9",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW005.20180917.1.DPG.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/var-status",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"var-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW006",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9d036f19-8b34-42ab-b876-299febf65ff9",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW005.20180917.1.DPG.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/var-status",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"var-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export anagraphic stores",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n   \"abi\":\"01005\",\r\n    \"circuit\": \"AP000\",\r\n    \"from\": \"MAS\",\r\n    \"to\": \"AP000\",\r\n    \"fileType\": \"FW009\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/anagraphic-stores",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"anagraphic-stores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import FW009b Differito WP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n  \t\"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW009\",\r\n    \"from\":\"MAS\",\r\n    \"circuit\":\"WP000\",\r\n    \"params\": {\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/anagraphic-stores/wechat",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"anagraphic-stores",
+						"wechat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import Ab-WeChat TransactionHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n  \t\"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW00A\",\r\n    \"from\":\"WP000\",\r\n    \"circuit\":\"WP000\",\r\n    \"params\": {\r\n    \t\"toDate\":\"20181121\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/wechat/transactionhistory",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"wechat",
+						"transactionhistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import FW012",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "12a523a0-20cd-43f9-b667-d1135fbf205d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n  \t\"fileName\":\"MAS.01005.FW012.20180918.1.GWSS.WP000.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/logunico",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"logunico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow D1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4add646f-7bfa-4620-92b0-c8fae6f490b6",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"${job:MAS0000T.TICKET}\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW0D1\",\r\n    \"from\":\"MAS\",\r\n    \"circuit\":\"XXXXX\",\r\n    \"params\": {\r\n       \"toDate\":\"20181128\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/dailytransactions",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"dailytransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow D2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ac2c25f4-6de8-44f5-869e-f71d052faea9",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"${job:MAS0000T.TICKET}\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW0D2\",\r\n    \"from\":\"MAS\",\r\n    \"circuit\":\"XXXXX\",\r\n    \"params\": {\r\n       \"toDate\":\"20181128\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/processedtransactions",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"processedtransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow 14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25b66e20-4b28-4a5c-bac4-5f52e1d47db2",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW014\",\r\n    \"from\":\"MAS\",\r\n    \"circuit\":\"XXXXX\",\r\n    \"params\": {\r\n       \"toDate\":\"20181128\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/dailycredit",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"dailycredit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow 24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6e578a16-6da9-4b0d-8ed4-aef2ff9a2980",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"requestHeaders\":{\n    \"technicalHeader\":{\n      \"applicationId\":null,\n      \"correlationId\":\"${job:MAS0000T.TICKET}\",\n      \"channel\":null,\n      \"ipAddress\":null,\n      \"sessionId\":null,\n      \"timestamp\":null\n    },\n    \"authHeader\":{\n      \"userId\":null,\n      \"username\":null,\n      \"roles\":null\n    }\n  },\n  \"responseHeaders\":null,\n  \"payload\": {\n    \"to\":\"01005\",\n    \"abi\":\"01005\",\n    \"fileType\":\"FW024\",\n    \"from\":\"MAS\",\n    \"circuit\":\"XXXXX\",\n    \"params\": {\n       \"toDate\":\"20181128\"\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/sctsddreport",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"sctsddreport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow X",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3e9ce964-8a24-4f28-bdbd-bc199a479510",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"requestHeaders\":{\n   \"technicalHeader\":{\n     \"applicationId\":null,\n     \"correlationId\":\"777777777\",\n     \"channel\":null,\n     \"ipAddress\":null,\n     \"sessionId\":null,\n     \"timestamp\":null\n   },\n   \"authHeader\":{\n     \"userId\":null,\n     \"username\":null,\n     \"roles\":null\n   }\n },\n \"responseHeaders\":null,\n \"payload\": {\n   \"abi\":\"01005\",\n   \"circuit\": \"XXXXX\",\n   \"from\": \"MAS\",\n   \"to\": \"AP000\",\n   \"fileType\": \"FW00X\",\n   \"params\":{\n   \t\"toDate\":\"20181001\"\n   }\n }\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/bankstatements",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"bankstatements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow 16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39a7c84c-992c-4c10-ac5b-dd41d58896b1",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n\"abi\":\"01005\",\r\n\"to\":\"01005\",\r\n\"circuit\": \"XXXXX\",\r\n\"fileType\":\"FW016\",\r\n\"params\": {\r\n\"toDate\":\"20181201\"\r\n}\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/monthlycommissionscharge",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"monthlycommissionscharge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export flow 20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "312c6105-6881-4d48-a7f9-b16d37e09b97",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"${job:GTR3000T.TICKET}\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW020\",\r\n    \"from\":\"MAS\",\r\n    \"params\": {\r\n       \"toDate\":\"20181201\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/dailycreditbalancebymonthlydebit",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"dailycreditbalancebymonthlydebit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW021",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "615217a5-6d0b-418a-ba49-8710cfd28e42",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW021\",\r\n    \"from\":\"MAS\",\r\n    \"to\":\"FTA\",\r\n    \"circuit\":\"XXXXX\",\r\n    \"params\": {\r\n    }\r\n  }\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/fta",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"fta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export FW027",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "615217a5-6d0b-418a-ba49-8710cfd28e42",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"disabled": false,
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"requestHeaders\":{  \r\n      \"technicalHeader\":{  \r\n         \"applicationId\":null,\r\n         \"correlationId\":\"777777777\",\r\n         \"channel\":null,\r\n         \"ipAddress\":null,\r\n         \"sessionId\":null,\r\n         \"timestamp\":null\r\n      },\r\n      \"authHeader\":{  \r\n         \"userId\":null,\r\n         \"username\":null,\r\n         \"roles\":null\r\n      }\r\n   },\r\n   \"responseHeaders\":null,\r\n   \"payload\":{  \r\n      \"fileName\":\"MAS.01005.FW027.20181011.1.01005.XXXXX.T018.TRK\"\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/mcc",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"mcc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import FW00A",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1195ca40-01a4-480d-b54e-3077823ead71",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW00A.20180830.01.AP000.AP000.T001.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/settlement",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"settlement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export reconciledquadrature",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "824fcd95-5974-423c-a134-2c1cf2ecee0a",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"requestHeaders\":{ \r\n    \"technicalHeader\":{ \r\n      \"applicationId\":null, \r\n      \"correlationId\":\"777777777\", \r\n      \"channel\":null, \r\n      \"ipAddress\":null, \r\n      \"sessionId\":null, \r\n      \"timestamp\":null \r\n    }, \r\n    \"authHeader\":{ \r\n      \"userId\":null, \r\n      \"username\":null, \r\n      \"roles\":null \r\n    } \r\n  }, \r\n  \"responseHeaders\":null, \r\n \"payload\": {\r\n\"to\":\"01005\",\r\n\"abi\":\"01005\",\r\n\"fileType\":\"FW022\",\r\n\"from\":\"MAS\",\r\n\"circuit\":\"AP000\",\r\n\"params\": {\r\n\"toDate\":\"20181001\"\r\n}\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:{{target.port}}/mas-orchestrator/api/etl/export/reconciledquadrature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"reconciledquadrature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import transections",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW00B.20160413.01.AP000.AP000.MASTESTS.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/transaction",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import anagraphic-variations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.02008.FW007.20180813.1.DPG.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/import/var-anag",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"import",
+						"var-anag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1bf838d1-fcfb-466f-a656-04adc0c89a07",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"88888888888\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\":{\r\n          \"from\": \"pippo@pluto.com\",\r\n          \"to\":\"claudiodebei@itecons.it,cons.stoccheroantonio@p4cards.eu,stocchero@omicronconsulting.it\",\r\n          \"subject\":\"PROVA SOGGETTO\",\r\n          \"content\":\"PROVA CONTENUTO\"\r\n  }\r\n  }"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-etl/api/send-email/execute",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-etl",
+						"api",
+						"send-email",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status import outcome",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.GTREP.ALL01.20160413.125510.EST001.V007.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/import/outcome",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"import",
+						"outcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status import status-variations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.GTREP.ALL01.20160413.125510.STA001.V005.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/import/status-variations",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"import",
+						"status-variations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status import anagraphic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW001.20160413.14.01005.XXXXX.MASTESTS.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/import/anagraphic",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"import",
+						"anagraphic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status import anagraphic-variations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.GTREP.ALL01.20160413.125510.VRZ001.V006.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/import/anagraphic-variations",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"import",
+						"anagraphic-variations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status export anagraphic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.ALL01.20160413.125510.CVR001.V001.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/anagraphic",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"anagraphic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status export outcome",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.GTREP.ALL01.20160413.125510.EST001.V007.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/outcome",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"outcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status export status-variations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.GTREP.ALL01.20160413.125510.STA001.V005.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/status-variations",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"status-variations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status export anagraphic-variations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.UNI.ALL01.20160413.125510.CVR0.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/anagraphic-variations",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"anagraphic-variations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status import accounting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW015.20160413.04.01005.XXXXX.BNLTESTS.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/import/accounting",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"import",
+						"accounting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status import log unico",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW015.20160413.04.01005.XXXXX.BNLTESTS.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/import/accounting",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"import",
+						"accounting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export anagraphic variations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.02008.FW007.20180813.1.DPG.XXXXX.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/export/var-anag",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"export",
+						"var-anag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status export commissions-conditions-outcome",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"fileName\":\"MAS.01005.FW015.20160413.03.01005.XXXXX.T003.TRK\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/commissionsconditionsoutcome",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"commissionsconditionsoutcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status Export flow D1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9b5808f8-10bc-4c4b-b0d3-660161a68d1e",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"${job:MAS0000T.TICKET}\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"to\":\"01005\",\r\n    \"abi\":\"01005\",\r\n    \"fileType\":\"FW0D1\",\r\n    \"from\":\"MAS\",\r\n    \"circuit\":\"XXXXX\",\r\n    \"params\": {\r\n       \"toDate\":\"20181004\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/dailytransactions",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"dailytransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status Export flow 24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ec8a4848-6f87-4149-a437-58f716eac077",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"requestHeaders\":{\n    \"technicalHeader\":{\n      \"applicationId\":null,\n      \"correlationId\":\"${job:MAS0000T.TICKET}\",\n      \"channel\":null,\n      \"ipAddress\":null,\n      \"sessionId\":null,\n      \"timestamp\":null\n    },\n    \"authHeader\":{\n      \"userId\":null,\n      \"username\":null,\n      \"roles\":null\n    }\n  },\n  \"responseHeaders\":null,\n  \"payload\": {\n    \"to\":\"01005\",\n    \"abi\":\"01005\",\n    \"fileType\":\"FW024\",\n    \"from\":\"MAS\",\n    \"circuit\":\"XXXXX\",\n    \"params\": {\n       \"toDate\":\"20181004\"\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/sctsddreport",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"sctsddreport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check status export anagraphic-stores",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestHeaders\":{\r\n    \"technicalHeader\":{\r\n      \"applicationId\":null,\r\n      \"correlationId\":\"777777777\",\r\n      \"channel\":null,\r\n      \"ipAddress\":null,\r\n      \"sessionId\":null,\r\n      \"timestamp\":null\r\n    },\r\n    \"authHeader\":{\r\n      \"userId\":null,\r\n      \"username\":null,\r\n      \"roles\":null\r\n    }\r\n  },\r\n  \"responseHeaders\":null,\r\n  \"payload\": {\r\n    \"abi\":\"01005\",\r\n    \"circuit\": \"AP000\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://{{target.host}}:{{target.port}}/mas-orchestrator/api/etl/check-status/export/anagraphic-stores",
+					"protocol": "http",
+					"host": [
+						"{{target.host}}"
+					],
+					"port": "{{target.port}}",
+					"path": [
+						"mas-orchestrator",
+						"api",
+						"etl",
+						"check-status",
+						"export",
+						"anagraphic-stores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
